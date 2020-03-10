@@ -5,13 +5,13 @@ main() {
  char pilih;
  float bil1, bil2, hasil;
  
- cout << " Menu Pilihan Proses" <<endl;
- cout << "===================================" <<endl;
- cout << "[1]. Penjumlahan"<<endl;
- cout << "[2]. Pengurangan"<<endl;
- cout << "[3]. Perkalian"<<endl;
- cout << "[4]. Pembagian"<<endl;
- cout << "===================================" <<endl;
+ cout << " Pilih Menu Calculator:" <<endl;
+ cout << "" <<endl;
+ cout << "1. Penjumlahan"<<endl;
+ cout << "2. Pengurangan"<<endl;
+ cout << "3. Perkalian"<<endl;
+ cout << "4. Pembagian"<<endl;
+ cout << "" <<endl;
  cout << "input nomor menu [1 .. 4] : ";
  cin >> pilih;
  
@@ -53,6 +53,10 @@ main() {
    hasil = bil1/bil2;
    cout << "Hasil Pembagian Dari " << bil1 <<"/"<<bil2<< " Adalah : " << hasil;
    break;
+   
+   default:
+        cout << "" <<endl;
+        cout<<"maaf, menu yang anda pilih tidak tersedia"<<endl;
  }
  
  return 0;
